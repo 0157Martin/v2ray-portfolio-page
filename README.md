@@ -1,6 +1,6 @@
 # v2ray Portfolio Page
 
-Dark React + TypeScript + Vite portfolio page for Caddy deployment through `v2ray-manager`.
+Immersive React + TypeScript + Vite personal blog with a cinematic bamboo-forest hero, built for Caddy deployment through `v2ray-manager`.
 
 ![Portfolio page preview](docs/preview.png)
 

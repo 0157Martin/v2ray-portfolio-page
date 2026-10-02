@@ -2,12 +2,16 @@
   "version": 1,
   "files": [
     {
-      "path": "assets/index-F0uuifV6.js",
-      "sha256": "0786eed0c55608215c5ae2d4c03886cc1513aae55b7eb7aa2ec9f10382e08861"
+      "path": "assets/bamboo-hero-B4C4x0qp.webp",
+      "sha256": "6337002e2cdf18f9df455456490d61445a79073167b0b7e85a12fe819acc02e9"
     },
     {
-      "path": "assets/index-l_KrpICs.css",
-      "sha256": "1130564dc6f21036fd00f679ba79868114e55d9807b2f25b8d171df5ed1a16c4"
+      "path": "assets/index-C5bEtGiC.js",
+      "sha256": "b7b45c0a8412acbedb307f5004c67484b066bb1032b2ec45ab35e0265ce07591"
+    },
+    {
+      "path": "assets/index-C9Sz1Ng-.css",
+      "sha256": "a67d95ffdb76c1edfdcee5fa11812610c589cf40ebf3e201fa5998113d070ce8"
     },
     {
       "path": "favicon.svg",
@@ -19,7 +23,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "b2ca95d3d41d9e7da5a58c69f3a652380b3473603a9a6e32affecad1d79e433d"
+      "sha256": "6bb0e20cdeddf52126509864ab6818879f4024088fb9d8445c95eba6b7f60957"
     },
     {
       "path": "site-config.json",
