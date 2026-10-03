@@ -1,0 +1,2 @@
+# Preserve deployment bytes: deploy-manifest.json hashes must survive Git checkout.
+dist/** -text

@@ -2,16 +2,24 @@
   "version": 1,
   "files": [
     {
+      "path": "assets/bamboo-adventure-BHLQjeX7.webp",
+      "sha256": "b7d9eb2406d585a3b0022d1a85a48383ffe57b34686b615782a9de48a01817f8"
+    },
+    {
+      "path": "assets/bamboo-adventure-small-BQG-21vy.webp",
+      "sha256": "36e46dc74d37ff2656cc063db0c8dfbd1b8c34903afc0c72c66791ec78359913"
+    },
+    {
       "path": "assets/bamboo-hero-B4C4x0qp.webp",
       "sha256": "6337002e2cdf18f9df455456490d61445a79073167b0b7e85a12fe819acc02e9"
     },
     {
-      "path": "assets/index-C5bEtGiC.js",
-      "sha256": "b7b45c0a8412acbedb307f5004c67484b066bb1032b2ec45ab35e0265ce07591"
+      "path": "assets/index-D2hEKG5T.js",
+      "sha256": "9720968955479b86306b099bb6503acf2f1722d89f9ffc828346aac83f8eca4e"
     },
     {
-      "path": "assets/index-C9Sz1Ng-.css",
-      "sha256": "a67d95ffdb76c1edfdcee5fa11812610c589cf40ebf3e201fa5998113d070ce8"
+      "path": "assets/index-DrnsOQ1-.css",
+      "sha256": "219a3ef5614dfbce4a4aed1ea62ee73bfbb6e619ba02bd17fcd4e61560662d3c"
     },
     {
       "path": "favicon.svg",
@@ -23,7 +31,7 @@
     },
     {
       "path": "index.html",
-      "sha256": "6bb0e20cdeddf52126509864ab6818879f4024088fb9d8445c95eba6b7f60957"
+      "sha256": "b08640ddc2b84057b47183d7b4271acdfce5efd194b676f9da573c70955cd6b0"
     },
     {
       "path": "site-config.json",

@@ -1,7 +1,59 @@
 # v2ray Portfolio Page
 
-Immersive React + TypeScript + Vite personal blog with a cinematic bamboo-forest hero, built for Caddy deployment through `v2ray-manager`.
+竹林主题的 React + TypeScript + Vite 静态个人博客，兼容 `v2ray-manager` 的 Caddy 部署流程。
 
-![Portfolio page preview](docs/preview.png)
+## 本次升级
 
-Run `npm install` and `npm run build` to refresh `dist/`. The committed deployment manifest contains a SHA-256 checksum for every installed file.
+- 新增用户提供图片的去水印版本，桌面首屏采用左侧文字、右侧人物构图，手机采用上图下文；图片处理记录见 `docs/image-edit.md`。
+- 新增「竹林奇遇」展示区和完整画面查看窗口，支持 Esc 关闭、焦点恢复和背景滚动锁定。
+- 阅读工具栏保持可见，新增阅读进度、大字号切换和上一篇／下一篇。字号偏好仅保存在本浏览器，无需后端；存储不可用时仍可正常阅读。
+- 保留原竹林插画，重新设计首页排版、精选文章、文章列表、关于区和页脚。
+- 六篇明确标注的示例文章，支持分类、全文搜索、无结果恢复与阅读时间。
+- 原生对话框阅读体验，支持键盘焦点约束、Esc 关闭、返回原阅读入口。
+- 文章使用 `#article/<id>` 链接，可直接分享和刷新，无需服务器路由重写。
+- 手机、平板和桌面响应式布局，减少动态效果偏好支持。
+- 中文页面语言、描述和动态标题；配置失败或超时后使用默认内容。
+
+## 本地开发与构建
+
+```sh
+npm ci
+npm run dev
+npm run build
+npm run preview
+```
+
+`npm run build` 包含 TypeScript 检查，生成 `dist/`，并自动生成带 SHA-256 校验值的 `dist/deploy-manifest.json`。该仓库保留构建产物，供现有安装程序下载。发布源代码修改时，请一并提交更新后的 `dist/`。
+
+## 自定义个人信息
+
+编辑 `public/site-config.json` 后重新构建，或在部署后直接编辑站点目录的 `site-config.json`：
+
+```json
+{
+  "template": "portfolio",
+  "domain": "your-domain.example",
+  "seed": "your-stable-seed",
+  "name": "你的名字",
+  "city": "你的城市"
+}
+```
+
+`name` 和 `city` 可选；未填写时保持旧版根据 `seed` 选择姓名与城市的行为。旧部署程序只写入 `template`、`domain`、`seed` 的配置仍然兼容。页面不将默认域名作为联系链接。
+
+## 替换文章
+
+文章集中保存在 `src/posts.ts`，目前均为原创示例内容，并在列表和阅读末尾标注。每篇包含稳定的 `id`、标题、分类、日期、摘要与正文段落。替换为真实文章后，可在 `src/App.tsx` 移除示例标签；新增分类时同步更新 `categories`。
+
+文章 `id` 用于分享地址，请尽量保持稳定。搜索覆盖标题、摘要和正文，并与分类组合筛选。纯前端文章链接不提供每篇文章独立的服务器端 SEO 或社交预览元数据。
+
+## 验证记录
+
+- `npm run build`：TypeScript 和生产构建通过。
+- 浏览器：分类筛选、搜索组合、空结果恢复、打开文章、复制链接、刷新直达、Esc 关闭通过。
+- 1440px 桌面与 390px 手机宽度均无页面横向溢出；手机阅读窗口保持在视口内。
+- 浏览器检查未发现警告或错误。
+- 第二轮验证：图片放大和关闭、阅读进度到达 100%、下一篇切换后滚动复位、刷新后保留字号偏好通过。
+- `dist/deploy-manifest.json` 的所有文件校验值已核对。
+
+当前改动在本地工作区完成；上线仍需通过原有 GitHub / Caddy 发布流程。
