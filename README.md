@@ -1,5 +1,6 @@
 # v2ray Portfolio Page
 
+作者：**Martin&林知远**
 竹林主题的 React + TypeScript + Vite 静态个人博客，兼容 `v2ray-manager` 的 Caddy 部署流程。
 
 ## 本次升级

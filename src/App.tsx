@@ -9,7 +9,7 @@ import { ArtworkViewer } from './ArtworkViewer'
 import './style.css'
 import './upgrade.css'
 
-const names = ['林知远', '周予安', '陈若川', '许清和', '沈言川']
+const names = ['Martin&林知远']
 const cities = ['杭州', '成都', '厦门', '南京', '深圳']
 const categories = ['全部', '随笔', '创作', '技术']
 const dateLabel = (date: string) => date.replaceAll('-', '.')
